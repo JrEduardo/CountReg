@@ -1,0 +1,12 @@
+^.*\.Rproj$
+^\.Rproj\.user$
+\#*\#
+^\.\#*
+
+^\.travis.yml$
+playground/
+
+README.*
+LICENSE
+CountReg.svg
+CountReg.png
