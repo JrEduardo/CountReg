@@ -5,8 +5,8 @@
 
 ^\.travis.yml$
 playground/
-
 README.*
 LICENSE
 CountReg.svg
 CountReg.png
+^data-raw$
