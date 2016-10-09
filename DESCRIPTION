@@ -1,6 +1,6 @@
 Package: CountReg
 Title: Regression Models for Dispersed Count Data
-Version: 0.0.0.1
+Version: 0.0.1
 Authors@R: as.person(c(
     "Eduardo Elias Ribeiro Junior <edujrrib@gmail.com> [aut, cre]",
     "Walmes Marques Zeviani <walmes@ufpr.br> [aut]"))
