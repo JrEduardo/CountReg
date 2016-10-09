@@ -1,4 +1,4 @@
-<img src = "https://github.com/JrEduardo/CountReg/raw/master/CountReg.png" width=150px align="right" display="block">
+<img src = "https://github.com/JrEduardo/CountReg/raw/master/vignettes/img/CountReg-logo.png" width=150px align="right" display="block">
 
 # `CountReg`: Regression Models for Dispersed Count Data #
 
