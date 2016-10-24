@@ -1,6 +1,6 @@
 #include <Rcpp.h>
-// #include <R.h>
-// #include <Rmath.h>
+#include <R.h>
+#include <Rmath.h>
 #include <algorithm>
 
 using namespace Rcpp;
