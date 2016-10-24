@@ -1,10 +1,13 @@
 <img src = "https://github.com/JrEduardo/CountReg/raw/master/CountReg.png" width=150px align="right" display="block">
 
-# `CountReg`: Regression Models for Dispersed Count Data #
+# Regression Models for Dispersed Count Data #
+
+[![Build Status](https://travis-ci.org/JrEduardo/CountReg.svg?branch=master)](https://travis-ci.org/JrEduardo/CountReg)
 
 > [Eduardo E. R. Junior](http://jreduardo.github.io/)
   ([edujrrib@gmail.com](mailto:edujrrib@gmail.com)) - Paraná Federal
-  University, Laboratory of Statistics and Geoinformation (LEG/UFPR).\
+  University, Laboratory of Statistics and Geoinformation (LEG/UFPR).
+
 > [Walmes M. Zeviani](www.leg.ufpr.br/~walmes/)
   ([walmes@ufpr.br](mailto:walmes@ufpr.br)) - Paraná Federal
   University, Laboratory of Statistics and Geoinformation (LEG/UFPR).
