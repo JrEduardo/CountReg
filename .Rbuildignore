@@ -7,6 +7,6 @@
 playground/
 README.*
 LICENSE
-CountReg.svg
-CountReg.png
+gammacount.svg
+gammacount.png
 ^data-raw$

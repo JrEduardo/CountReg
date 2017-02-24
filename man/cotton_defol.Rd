@@ -90,4 +90,3 @@ Silva, A. M., Degrande, P. E., Suekane, R., Fernandes,
     \url{http://doi.org/10.1080/02664763.2014.922168},
     \url{http://leg.ufpr.br/doku.php/publications:papercompanions:zeviani-jas2014}.
 }
-

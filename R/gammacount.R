@@ -1,10 +1,10 @@
-#' @name CountReg
+#' @name gammacount
 #' @title Regression Models for Dispersed Count Data
 #' @docType package
-#' @description The CountReg package contains functions to modelling
-#'     count data via likelihood-based approach with a S4
-#'     implementation. The models considered are Generalized-Poisson,
-#'     COM-Poisson and Gamma-Count and methods for the models also are
+#' @description The gammacount is a package that contains functions to
+#'     modelling count data via likelihood-based approach with a S4
+#'     implementation. The Gamma-count regression models are considered
+#'     in package and methods functions for this models also are
 #'     provided.
 #'
 NULL
@@ -17,7 +17,7 @@ NULL
 ##     M. Zeviani <walmes@ufpr.br>
 .onAttach <- function(libname, pkgname) {
     pkg.info <- drop(read.dcf(
-        file = system.file("DESCRIPTION", package = "CountReg"),
+        file = system.file("DESCRIPTION", package = "gammacount"),
         fields = c("Package", "Title", "Version", "Date", "URL")
     ))
     dashes <- paste0(rep("----------", times = 7), collapse = "")
