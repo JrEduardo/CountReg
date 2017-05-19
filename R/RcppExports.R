@@ -2,26 +2,26 @@
 # Generator token: 10BE3573-1514-4C36-9D1C-5A225CD40393
 
 .qgcnt_iid <- function(p, lambda, alpha) {
-    .Call('CountReg_qgcnt_iid', PACKAGE = 'CountReg', p, lambda, alpha)
+    .Call('gammacount_qgcnt_iid', PACKAGE = 'gammacount', p, lambda, alpha)
 }
 
 .qgcnt_one <- function(p, lambda, alpha) {
-    .Call('CountReg_qgcnt_one', PACKAGE = 'CountReg', p, lambda, alpha)
+    .Call('gammacount_qgcnt_one', PACKAGE = 'gammacount', p, lambda, alpha)
 }
 
 .rgcnt_one <- function(lambda, alpha) {
-    .Call('CountReg_rgcnt_one', PACKAGE = 'CountReg', lambda, alpha)
+    .Call('gammacount_rgcnt_one', PACKAGE = 'gammacount', lambda, alpha)
 }
 
 .rgcnt_iid <- function(n, lambda, alpha) {
-    .Call('CountReg_rgcnt_iid', PACKAGE = 'CountReg', n, lambda, alpha)
+    .Call('gammacount_rgcnt_iid', PACKAGE = 'gammacount', n, lambda, alpha)
 }
 
 .rgnzp_esc <- function(n, lambda, alpha) {
-    .Call('CountReg_rgnzp_esc', PACKAGE = 'CountReg', n, lambda, alpha)
+    .Call('gammacount_rgnzp_esc', PACKAGE = 'gammacount', n, lambda, alpha)
 }
 
 .rgnzp_vec <- function(n, lambda, alpha) {
-    .Call('CountReg_rgnzp_vec', PACKAGE = 'CountReg', n, lambda, alpha)
+    .Call('gammacount_rgnzp_vec', PACKAGE = 'gammacount', n, lambda, alpha)
 }
 

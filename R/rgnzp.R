@@ -1,4 +1,4 @@
-#' @useDynLib CountReg
+#' @useDynLib gammacount
 #' @importFrom Rcpp sourceCpp
 NULL
 

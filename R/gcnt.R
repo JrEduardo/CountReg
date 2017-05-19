@@ -72,7 +72,7 @@ pgcnt <- function(x, lambda, alpha = 1, lower.tail = TRUE, log = FALSE) {
 
 #' @rdname dpqr-gcnt
 #' @export
-#' @useDynLib CountReg
+#' @useDynLib gammacount
 #' @importFrom Rcpp sourceCpp
 #' @details The \code{qgcnt()} is implemented in \strong{C++} in two
 #'     versions. The first is implemented for the \emph{idd} case that
@@ -104,7 +104,7 @@ qgcnt <- function(p, lambda, alpha = 1) {
 
 #' @rdname dpqr-gcnt
 #' @export
-#' @useDynLib CountReg
+#' @useDynLib gammacount
 #' @importFrom Rcpp sourceCpp
 #' @details The \code{rgcnt()} is implemented in \strong{C++} in two
 #'     versions. The first is implemented for the \emph{idd} case that

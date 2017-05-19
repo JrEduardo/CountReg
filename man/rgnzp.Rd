@@ -37,4 +37,3 @@ rgnzp(n = 10, lambda = 5, alpha = 0)
 \author{
 Walmes Zeviani, \email{walmes@ufpr.br}.
 }
-

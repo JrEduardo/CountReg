@@ -10,6 +10,7 @@ STYLEGUIDE.html
 plano.Rmd
 playground.R
 **/playground/*
+*.Rcheck/
 
 ## R backup files
 .Rproj.user

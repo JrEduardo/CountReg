@@ -1,4 +1,4 @@
-Package: CountReg
+Package: gammacount
 Title: Regression Models for Dispersed Count Data
 Version: 0.0.1
 Authors@R: as.person(c(
@@ -17,9 +17,9 @@ Suggests:
     knitr
 LinkingTo: Rcpp
 License: GPL-3
-URL: https://github.com/JrEduardo/CountReg
-BugReports: https://github.com/JrEduardo/CountReg/issues
+URL: https://github.com/JrEduardo/gammacount
+BugReports: https://github.com/JrEduardo/gammacount/issues
 Encoding: UTF-8
 LazyData: true
 VignetteBuilder: knitr
-RoxygenNote: 5.0.1
+RoxygenNote: 6.0.1
