@@ -11,6 +11,7 @@ plano.Rmd
 playground.R
 **/playground/*
 *.Rcheck/
+docs/
 
 ## R backup files
 .Rproj.user

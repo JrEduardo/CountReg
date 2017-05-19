@@ -10,3 +10,5 @@ LICENSE
 CountReg.svg
 CountReg.png
 ^data-raw$
+^docs$
+_build_pkg.R
