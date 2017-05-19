@@ -1,6 +1,7 @@
 Package: gammacount
 Title: Regression Models for Dispersed Count Data
-Version: 0.0.0.1
+Version: 0.0.1
+Date: 2017-05-19
 Authors@R: as.person(c(
     "Eduardo Elias Ribeiro Junior <edujrrib@gmail.com> [aut, cre]",
     "Walmes Marques Zeviani <walmes@ufpr.br> [aut]"))
@@ -9,10 +10,13 @@ Description: This package contains functions to modelling count data in
     considered are Generalized-Poisson, COM-Poisson and Gamma-Count. A
     collection of methods for the models also are provided.
 Depends: R (>= 3.2.3)
+Imports:
+    Rcpp
 Suggests:
     lattice,
     latticeExtra,
     knitr
+LinkingTo: Rcpp
 License: GPL-3
 URL: https://github.com/JrEduardo/gammacount
 BugReports: https://github.com/JrEduardo/gammacount/issues

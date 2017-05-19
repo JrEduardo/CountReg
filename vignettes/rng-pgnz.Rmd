@@ -1,0 +1,63 @@
+---
+title: "Random Number Generation for Generalized Poisson Distribution"
+author: >
+  [Eduardo E. Ribeiro Jr](https://jreduardo.github.io/) &
+  [Walmes Marques Zeviani](http://www.leg.ufpr.br/~walmes)
+vignette: >
+  %\VignetteIndexEntry{Random Number Generation for Generalized Poisson Distribution}
+  %\VignetteEngine{knitr::rmarkdown}
+  %\VignetteEncoding{UTF-8}
+---
+
+For some discrete random variables, is possible calculate probabilities
+using a recursive formula. Bionomial and Poisson random variables have
+these property. Lets check if the same apply for the Generalized Poisson
+(GP) distribution.
+
+$$
+\begin{align*}
+\Pr(X = x) &= \Pr(X = x - 1) \times h(x)\\
+h(x) &= \frac{\Pr(X = x)}{\Pr(X = x - 1)}\\
+ &= \frac{
+  \left(\frac{\lambda}{1+\alpha\lambda}\right)^{y}
+  (1 + \alpha y)^{y - 1}
+  \exp\left\{-\lambda\frac{1+\alpha y}{1+\alpha\lambda}\right\}
+  (y!)^{-1}}{
+  \left(\frac{\lambda}{1+\alpha\lambda}\right)^{y - 1}
+  (1 + \alpha (y - 1))^{y - 2}
+  \exp\left\{-\lambda\frac{1+\alpha (y - 1)}{1+\alpha\lambda}\right\}
+  ((y - 1)!)^{-1}}\\
+ &= \frac{\left(\frac{\lambda}{1+\alpha\lambda}\right)^{y}}{
+          \left(\frac{\lambda}{1+\alpha\lambda}\right)^{y-1}} \times
+    \frac{(1 + \alpha y)^{y - 1}}{
+          (1 + \alpha (y - 1))^{y - 2}} \times
+    \frac{\exp\left\{-\lambda\frac{1+\alpha y}{
+          1+\alpha\lambda}\right\}}{
+          \exp\left\{-\lambda\frac{1+\alpha (y - 1)}{
+          1+\alpha\lambda}\right\}} \times
+    \frac{(y!)^{-1}}{((y - 1)!)^{-1}}\\
+ &= \left(\frac{\lambda}{1+\alpha\lambda}\right) \times
+    (1 + \alpha y)^{y - 1}(1 + \alpha (y - 1))^{2 - y} \times
+    \exp\left\{-\frac{\alpha\lambda}{1+\alpha\lambda}\right\} \times
+    y^{-1}
+\end{align*}
+$$
+
+These property is valid for GP distribution. Note that is recursive
+formula is only valid for values of $x > 1$. For $\Pr(X=0)$ and
+$\Pr(X=1)$ should be used the probability function.
+
+$$
+\begin{align*}
+\Pr(X = 0) &=
+  \left(\frac{\lambda}{1+\alpha\lambda}\right)^{0}
+  (1 + \alpha 0)^{0 - 1}
+  \exp\left\{-\lambda\frac{1+\alpha 0}{1+\alpha\lambda}\right\} =
+  \exp\left\{-\frac{\lambda}{1+\alpha\lambda}\right\} \\
+\Pr(X = 1) &= \left(\frac{\lambda}{1+\alpha\lambda}\right)^{1}
+  (1 + \alpha 1)^{1 - 1}
+  \exp\left\{-\lambda\frac{1+\alpha 1}{1+\alpha\lambda}\right\} =
+  \left(\frac{\lambda}{1+\alpha\lambda}\right)
+  \exp\left\{-\lambda\frac{1+\alpha}{1+\alpha\lambda}\right\}
+\end{align*}
+$$
