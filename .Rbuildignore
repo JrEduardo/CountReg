@@ -12,3 +12,4 @@ gammacount.png
 ^data-raw$
 ^docs$
 _build_pkg.R
+_pkgdown.yml
