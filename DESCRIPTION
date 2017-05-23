@@ -9,9 +9,12 @@ Description: This package contains functions to modelling count data in
     a likelihood-based approach with a S4 implementation. The models
     considered are Generalized-Poisson, COM-Poisson and Gamma-Count. A
     collection of methods for the models also are provided.
-Depends: R (>= 3.2.3)
+Depends:
+    R (>= 3.2.3),
+    bbmle
 Imports:
-    Rcpp
+    Rcpp,
+    methods
 Suggests:
     lattice,
     latticeExtra,
