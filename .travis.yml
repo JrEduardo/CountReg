@@ -1,3 +1,5 @@
+dist: xenial
+
 language: R
 cache: packages
 cran: http://cran-r.c3sl.ufpr.br/
