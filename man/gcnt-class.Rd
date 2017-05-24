@@ -6,5 +6,5 @@
 \title{An S4 class for the Gamma-Count regression model}
 \description{
 Creates a class for the Gamma-Count model by
-    inheritance.
+    inheritance from \code{mle2} class.
 }

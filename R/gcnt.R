@@ -72,7 +72,7 @@ pgcnt <- function(x, lambda, alpha = 1, lower.tail = TRUE, log = FALSE) {
 
 #' @rdname dpqr-gcnt
 #' @export
-#' @useDynLib gammacount
+#' @useDynLib gammacount, .registration = TRUE
 #' @importFrom Rcpp sourceCpp
 #' @details The \code{qgcnt()} is implemented in \strong{C++} in two
 #'     versions. The first is implemented for the \emph{idd} case that
