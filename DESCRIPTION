@@ -1,21 +1,23 @@
 Package: gammacount
 Title: Regression Models for Dispersed Count Data
-Version: 0.0.1
-Date: 2017-05-19
+Version: 0.0.2
+Date: 2017-05-24
 Authors@R: as.person(c(
     "Eduardo Elias Ribeiro Junior <edujrrib@gmail.com> [aut, cre]",
     "Walmes Marques Zeviani <walmes@ufpr.br> [aut]"))
-Description: This package contains functions to modelling count data in
-    a likelihood-based approach with a S4 implementation. The models
-    considered are Generalized-Poisson, COM-Poisson and Gamma-Count. A
-    collection of methods for the models also are provided.
-Depends:
+Description: The gammacount is a package with functions to apply
+    regression models to count data using the Gamma-Count distribution.
+    A likelihood-based approach is used for parameter estimation and
+    inference through a S4 implementation derived from bbmle package.
+    The Gamma-count regression model is considered in this package and
+    methods for this model are provided.
+Depends: 
     R (>= 3.2.3),
     bbmle
-Imports:
+Imports: 
     Rcpp,
     methods
-Suggests:
+Suggests: 
     lattice,
     latticeExtra,
     knitr

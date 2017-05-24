@@ -21,6 +21,26 @@ check(manual = TRUE, vignettes = FALSE, check_dir = ".")
 build(vignettes = FALSE, manual = TRUE, path = "./docs")
 
 #-----------------------------------------------------------------------
+# Update DESCRIPTION.
+
+flds <- c("Authors@R", "Imports", "Depends", "Suggests")
+desc <- read.dcf(file = "DESCRIPTION",
+                 keep.white = flds)
+
+# Update date.
+desc[1, "Date"] <- as.character(Sys.Date())
+
+# Increment version.
+desc[1, "Version"] <- gsubfn::gsubfn(pattern = "([[:digit:]]+)$",
+                                     replacement = ~as.integer(x) + 1,
+                                     x = desc[1, "Version"])
+
+write.dcf(x = desc,
+          file = "DESCRIPTION",
+          indent = 4,
+          keep.white = flds)
+
+#-----------------------------------------------------------------------
 # Package documentation with pkgdown.
 
 library(pkgdown)
