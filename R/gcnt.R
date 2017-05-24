@@ -1,3 +1,7 @@
+#' @useDynLib gammacount, .registration = TRUE
+#' @importFrom Rcpp sourceCpp
+NULL
+
 #' @name dpqr-gcnt
 #' @author Walmes Zeviani, \email{walmes@@ufpr.br}.
 #' @title Functions for the Gamma Count Distribution
@@ -72,8 +76,6 @@ pgcnt <- function(x, lambda, alpha = 1, lower.tail = TRUE, log = FALSE) {
 
 #' @rdname dpqr-gcnt
 #' @export
-#' @useDynLib gammacount, .registration = TRUE
-#' @importFrom Rcpp sourceCpp
 #' @details The \code{qgcnt()} is implemented in \strong{C++} in two
 #'     versions. The first is implemented for the \emph{idd} case that
 #'     is when both \code{lambda} and \code{alpha} are vectors of length
@@ -104,8 +106,6 @@ qgcnt <- function(p, lambda, alpha = 1) {
 
 #' @rdname dpqr-gcnt
 #' @export
-#' @useDynLib gammacount
-#' @importFrom Rcpp sourceCpp
 #' @details The \code{rgcnt()} is implemented in \strong{C++} in two
 #'     versions. The first is implemented for the \emph{idd} case that
 #'     is when both \code{lambda} and \code{alpha} are vectors of length

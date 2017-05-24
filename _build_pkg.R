@@ -65,3 +65,10 @@ cat(cmd)
 system(cmd)
 
 #-----------------------------------------------------------------------
+# https://stackoverflow.com/questions/42313373/r-cmd-check-note-found-no-calls-to-r-registerroutines-r-usedynamicsymbols
+
+sink("./src/gammacount_init.c")
+tools::package_native_routine_registration_skeleton(".")
+sink()
+
+#-----------------------------------------------------------------------
