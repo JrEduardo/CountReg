@@ -72,4 +72,3 @@ inst/doc/*.Rmd
 src/*.so
 src/*.o
 src/*.dll
-src/RcppExports.cpp
